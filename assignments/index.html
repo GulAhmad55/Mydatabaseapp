@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="container">
+        <h1>WELCOME BACK!</h1>
+        <div class="box">
+          <form action="">
+            <label for="E-mail" class="E-mail"
+              >E-mail:
+              <input
+                type="email"
+                id="email"
+                placeholder="  Enter Your E-mail Adress"
+              />
+            </label>
+            <br />
+            <label for="Password" class="Password"
+              >Password:
+              <input
+                type="password"
+                id="password"
+                placeholder="  Enter Your Password"
+              /> </label
+            ><br />
+            <label for="Confirm Password" class="Confirm-Password"
+              >Confirm Password:
+              <input
+                type="password"
+                id="Confirm-Password"
+                placeholder="  Confirm Password"
+              />
+            </label>
+          </form>
+          <button class="btn-s" onclick="Adddata()">Submit</button>
+          <button class="btn-r" onclick="Removedata()">Reset</button>
+        </div>
+      </div>
+      <div class="table">
+        <h1 class="heading-1">DATA BASE</h1>
+        <table>
+          <thead >
+            <tr>
+              <td style="font-weight: bold">E-mail Adress</td>
+              <td style="font-weight: bold">Password</td>
+              <td style="font-weight: bold">Confirm Password</td>
+            </tr>
+            <tr></tr>
+          </thead>
+
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
